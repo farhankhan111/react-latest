@@ -3,7 +3,7 @@ import Header from './Header';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
 
-const Layout = ({ children }) => {
+const Layout = ({ heading,children }) => {
   return (
       <div>
           <Header/>
@@ -12,11 +12,11 @@ const Layout = ({ children }) => {
           <main id="main" className="main">
 
               <div className="pagetitle">
-                  <h1>Orders</h1>
+                  <h1>{heading}</h1>
                   <nav>
                       <ol className="breadcrumb">
                           <li className="breadcrumb-item"><a href="">Dashboard</a></li>
-                          <li className="breadcrumb-item">Orders</li>
+                          <li className="breadcrumb-item">{heading}</li>
                       </ol>
                   </nav>
               </div>

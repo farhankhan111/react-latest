@@ -12,12 +12,9 @@ import Layout from './Layout';
 const Dashboard = () => {
   return (
     <div>
-      
 
-      <Layout>
-        <main id="main" className="main">
+      <Layout heading='Dashboard'>
 
-        </main>
       </Layout>
 
     </div>

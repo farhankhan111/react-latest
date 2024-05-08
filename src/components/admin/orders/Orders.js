@@ -9,18 +9,8 @@ const Orders = () => {
     const fetchOrders = async () => {
       try {
 
-        // const response = await axios.get('https://your-laravel-api.com/orders');
-
-        const data = [
-          { id: 1, origin: 'New York', destination: 'Los Angeles', type: 'Express' },
-          { id: 2, origin: 'Chicago', destination: 'Houston', type: 'Standard' },
-          { id: 3, origin: 'Miami', destination: 'Seattle', type: 'Express' },
-          { id: 4, origin: 'Boston', destination: 'San Francisco', type: 'Standard' },
-          { id: 5, origin: 'Atlanta', destination: 'Denver', type: 'Express' },
-          // Add more fake data as needed
-        ];
-
-        setOrders(data);
+        const response = await axios.get('http://example-app.test/api/orders');
+        setOrders(response.data.data);
 
       } catch (error) {
         console.error('Error fetching orders:', error);
@@ -31,7 +21,7 @@ const Orders = () => {
   }, []);
   return (
       <div>
-        <Layout>
+        <Layout heading='Orders'>
           <section className="section">
             <div className="row">
               <div className="col-lg-12">
@@ -53,27 +43,19 @@ const Orders = () => {
                       </tr>
                       </thead>
                       <tbody>
-                      {orders.map(order => (
+                      {orders && orders.map(order => (
                           <tr key={order.id}>
                             <th scope="row">1</th>
                             <td>{order.origin}</td>
                             <td>{order.destination}</td>
                             <td>{order.departure_date}</td>
                             <td>{order.return_date}</td>
-                            <td></td>
+                            <td>{order.type}</td>
                             <td>{order.stage}</td>
                             <td>{order.created_at}</td>
                           </tr>
                       ))}
-                      {/*<tr>
-                            <th scope="row">1</th>
-                            <td>KHI</td>
-                            <td>DXB</td>
-                            <td>2016-05-25</td>
-                            <td>2016-05-25</td>
-                            <td>Expired</td>
-                            <td>2016-05-25</td>
-                          </tr>*/}
+
                       </tbody>
                     </table>
 
