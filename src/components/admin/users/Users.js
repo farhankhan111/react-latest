@@ -4,7 +4,7 @@ import Layout from '../Layout';
 const Orders = () => {
   return (
     <div>
-      <Layout>
+      <Layout heading="Users">
           <section className="section">
             <div className="row">
               <div className="col-lg-12">

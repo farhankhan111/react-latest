@@ -41,7 +41,7 @@ const AddUser = () => {
 
     return (
         <div>
-            <Layout>
+            <Layout heading="Add User">
                 <section className="section">
                     <div className="col-lg-12">
                         <div className="card">
@@ -50,7 +50,7 @@ const AddUser = () => {
                                 <form onSubmit={handleSubmit}>
                                     <div className="row mb-3">
                                         <div className="col-md-6">
-                                            <label className="col-sm-2 col-form-label">Name</label>
+                                            <label className="col-sm-2 col-form-label">First Name</label>
                                             <input type="text" name="first_name" onChange={handleChange}
                                                    className="form-control"/>
                                         </div>

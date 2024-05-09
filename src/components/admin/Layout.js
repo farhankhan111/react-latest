@@ -13,12 +13,12 @@ const Layout = ({ heading,children }) => {
 
               <div className="pagetitle">
                   <h1>{heading}</h1>
-                  <nav>
+                 {/* <nav>
                       <ol className="breadcrumb">
                           <li className="breadcrumb-item"><a href="">Dashboard</a></li>
                           <li className="breadcrumb-item">{heading}</li>
                       </ol>
-                  </nav>
+                  </nav>*/}
               </div>
               {children}
 
