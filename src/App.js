@@ -4,9 +4,9 @@ import Home from './components/front/Home';
 import Orders from './components/admin/orders/Orders';
 import Users from './components/admin/users/Users';
 import AddUser from './components/admin/users/Add';
-import OrderDetail from './components/admin/orders/Detail'
-import axios from "axios";
+import OrderDetail from './components/admin/orders/Detail';
 
+import axios from "axios";
 
 axios.defaults.baseURL = 'http://example-app.test/api';
 

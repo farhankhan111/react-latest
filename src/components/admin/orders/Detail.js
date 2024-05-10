@@ -24,7 +24,7 @@ const Detail = () => {
         };
 
         orderDetail();
-    }, []);
+    }, [orderId]);
 
     return (
         <div>
@@ -102,11 +102,9 @@ const Detail = () => {
 
                     <div className="row">
                         <div className="col-lg-12">
-
                             <div className="card">
                                 <div className="card-body">
                                     <h4 className="card-title">Offers</h4>
-
                                     <div className="accordion" id="accordionExample">
                                         <div className="accordion-item">
                                             <h2 className="accordion-header" id="headingOne">
@@ -137,13 +135,9 @@ const Detail = () => {
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
-
-
                     </div>
 
                 </section>
