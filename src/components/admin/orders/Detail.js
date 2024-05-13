@@ -69,11 +69,11 @@ const Detail = () => {
                                                 </tr>
                                                 <tr>
                                                     <th scope="col">Origin</th>
-                                                    <td scope="col">{data.origin}</td>
+                                                    <td scope="col">{data.origin_code}</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="col">Destination</th>
-                                                    <td scope="col">{data.destination}</td>
+                                                    <td scope="col">{data.destination_code}</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="col">Type</th>

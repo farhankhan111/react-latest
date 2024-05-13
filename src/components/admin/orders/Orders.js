@@ -48,8 +48,8 @@ const Orders = () => {
                                         {orders && orders.map(order => (
                                             <tr key={order.id}>
                                                 <th scope="row">1</th>
-                                                <td>{order.origin}</td>
-                                                <td>{order.destination}</td>
+                                                <td>{order.origin_code}</td>
+                                                <td>{order.destination_code}</td>
                                                 <td>{order.departure_date}</td>
                                                 <td>{order.return_date}</td>
                                                 <td>{order.type}</td>
